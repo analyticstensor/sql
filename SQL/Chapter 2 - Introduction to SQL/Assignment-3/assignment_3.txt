@@ -1,0 +1,5 @@
+1. Describe NULL and Literal Values.
+2. Describe ACID properties of transactions.
+3. Understand and Memorize the table. 
+
+
