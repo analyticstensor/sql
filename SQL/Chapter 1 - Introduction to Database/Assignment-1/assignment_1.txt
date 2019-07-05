@@ -1,0 +1,10 @@
+## Describe the following:
+
+Key:
+1. Primary Key
+2. Foreign/Referencing Key
+3. Candidate/Alternate Key
+4. Unique Constraint
+5. Referential Integrity
+
+[Click here to find appropriate document.](https://mariadb.com/kb/en/library/database-theory)
