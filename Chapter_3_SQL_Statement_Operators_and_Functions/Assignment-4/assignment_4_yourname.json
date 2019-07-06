@@ -1,12 +1,11 @@
 {
- 	"name”:"concat_ws(string separator,string_1,string_2)”
- 	"usage”:"concat two string with string separator”
- 	"string_separator”:" "
- 	"string_1":"first_name"
- 	"string_2":"last_name"
- 	"database”:“employee”
- 	"sql_statement”:“select concat_ws(" ",first_name, last_name) as fullname from employees limit 10 ;"
- 	"isjoin":true
- 	"join_statement":"select e.emp_no as 'Employee ID' , concat_ws(" ",e.first_name,e.last_name) as 'Employee Fullname’, s.salary as 'Annual Wage' from employees e inner join salaries s on e.emp_no = s.emp_no order by s.salary desc limit 10 ;"
+"name": "concat_ws(string separator,string_1,string_2)",
+"usage": "concat two string with string separator",
+"string_separator": "\" \" ",
+"string_1": "first_name",
+"string_2": "last_name",
+"database": "employee",
+"sql_statement": "select concat_ws(\" \",first_name,last_name) as fullname from employees limit 10 ;",
+"isjoin": true,
+"join_statement": "select e.emp_no as 'Employee ID' , concat_ws(\" \",e.first_name,e.last_name) as 'Employee Fullname’, s.salary as 'Annual Wage' from employees e inner join salaries s on e.emp_no = s.emp_no order by s.salary desc limit 10 ;"
 }
-
