@@ -1,1 +1,1 @@
-will be adding soon.  
+Choose top 10 important function for each group at slide 23. And write one SQL statement using employee database. You can choose and tables. If you are familiar with JOIN then you can utilize those functionality. Optional: Extra credit 80 point if you create all the 100 SQL statement using at least join or subquery.  
