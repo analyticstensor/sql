@@ -1,0 +1,209 @@
+{
+  "author": "Analytics Tensor",
+  "create_date": "2019-07-06",
+  "email": "info@analyticstensor.com",
+  "description": "Demonstration of SQL functions",
+  "database_type": "mysql",
+  "database_version": 8.3,
+  "database": "employee",
+  "table": [
+    "departments",
+    "dept_emp",
+    "dept_manager",
+    "employees",
+    "salaries",
+    "titles"
+  ],
+  "numeric_function": {
+    "description": "Numeric function is used to perform arithemetic and mathematical calculation.",
+    "function_list": [
+      {
+        "id": 1,
+        "name": "pi()",
+        "usage": "return the values of pi.",
+        "parameter": null,
+        "return_type": "float",
+        "sql_statement": "select pi() as value_of_pie ;",
+        "isjoin": false,
+        "join_statement": null
+      },
+      {
+        "id": 2,
+        "name": "floor(x)",
+        "usage": "return the largest integer values less than or equal to x.",
+        "parameter_1": {
+          "attribute_name": "salary",
+          "attribute_type": [
+            "int",
+            "float"
+          ]
+        },
+        "return_type": "int",
+        "sql_statement": "select floor(salary) as floor_salary from salaries ;",
+        "isjoin": false,
+        "join_statement": null
+      },
+      {
+        "id": 3,
+        "name": "round(x,d)",
+        "usage": "round the argument x to d decimal places.",
+        "parameter_1": {
+          "attribute_name": "salary",
+          "attribute_type": [
+            "int",
+            "float"
+          ]
+        },
+        "parameter_2": {
+          "attribute_name": null,
+          "attribute_value": 2,
+          "attribute_type": "int",
+          "description": "d defaults to 0 if not specified. d can be negative to cause d digits left of the decimal point of the value x to become zero"
+        },
+        "return_type": [
+          "int",
+          "float"
+        ],
+        "sql_statement": "select round(salary, 2) as round_value from salaries ;",
+        "isjoin": false,
+        "join_statement": null
+      },
+      {
+        "id": 4,
+        "name": "truncate(x,d)",
+        "usage": "returns the number x, truncated to d decimal places.",
+        "parameter_1": {
+          "attribute_name": "salary",
+          "attribute_type": [
+            "int",
+            "float"
+          ]
+        },
+        "parameter_2": {
+          "attribute_name": null,
+          "attribute_value": 2,
+          "description": "If d is 0, the result has no decimal point or fractional part. d can be negative to cause d digits left of the decimal point of the value x to become zero."
+        },
+        "return_type": "float",
+        "sql_statement": "select truncate(salary, 2) as 'Truncate Extra Currency' from salaries limit 10 ;",
+        "isjoin": false,
+        "join_statement": null
+      },
+      {
+        "id": 5,
+        "name": "mod(n,m)",
+        "usage": "Returns the remainder of n divided by m.",
+        "parameter_1": {
+          "attribute_name": "emp_no",
+          "attribute_type": "int",
+          "description": "should be integer"
+        },
+        "parameter_2": {
+          "attribute_name": null,
+          "attribute_value": 2,
+          "description": "should be integer"
+        },
+        "return_type": "integer",
+        "sql_statement": "select mod(emp_no, 2) as 'Truncate Extra Currency' from salaries limit 10 ;",
+        "isjoin": false,
+        "join_statement": null
+      },
+      {
+        "id": 6,
+        "name": "pow(x,y)",
+        "usage": "Returns the value of x raised to the power of y.",
+        "parameter_1": {
+          "attribute_name": "dept_no",
+          "attribute_type": "int",
+          "description": "should be integer"
+        },
+        "parameter_2": {
+          "attribute_name": null,
+          "attribute_value": 2,
+          "description": "should be integer"
+        },
+        "return_type": "integer",
+        "sql_statement": "select pow(dept_no, 2) as power_of_emp_no from employees limit 10 ;",
+        "isjoin": false,
+        "join_statement": null
+      }
+    ]
+  },
+  "string_function": {
+    "description": "String function is used to manupulate string operation.",
+    "function_list": [
+      {
+        "id": 1,
+        "name": "concat_ws(string_separator,string_1,string_2)",
+        "usage": "concat two string with string separator",
+        "parameter_1": {
+          "attribute_name": null,
+          "attribute_value": "\" \" ",
+          "description": "string separater can be any string. use escape character."
+        },
+        "parameter_2": {
+          "attribute_name": "first_name",
+          "attribute_type": "string",
+          "description": "first string to be concatenated. this uses first name from employees table."
+        },
+        "parameter_3": {
+          "attribute_name": "last_name",
+          "attribute_type": "string",
+          "description": "second string to be concatenated. this uses last name from employees table."
+        },
+        "return_type": "string",
+        "sql_statement": "select concat_ws(\" \", first_name, last_name) as fullname from employees limit 10 ;",
+        "isjoin": true,
+        "join_statement": "select e.emp_no as 'Employee ID' , concat_ws(\" \", e.first_name, e.last_name) as 'Employee Fullname', s.salary as 'Annual Wage' from employees e inner join salaries s on e.emp_no = s.emp_no order by s.salary desc limit 10 ;"
+      }
+    ]
+  },
+  "date_time_function": {
+    "description": " function is used to manupulate string operation.",
+    "function_list": [
+      {}
+    ]
+  },
+  "control_flow_function": {
+    "description": " function is used to manupulate string operation.",
+    "function_list": [
+      {}
+    ]
+  },
+  "cast_function": {
+    "description": " function is used to manupulate string operation.",
+    "function_list": [
+      {}
+    ]
+  },
+  "encrypt_compress_function": {
+    "description": " function is used to manupulate string operation.",
+    "function_list": [
+      {}
+    ]
+  },
+  "aggregate_function": {
+    "description": " function is used to manupulate string operation.",
+    "function_list": [
+      {}
+    ]
+  },
+  "window_function": {
+    "description": " function is used to manupulate string operation.",
+    "function_list": [
+      {}
+    ]
+  },
+  "information_function": {
+    "description": " function is used to manupulate string operation.",
+    "function_list": [
+      {}
+    ]
+  },
+  "json_function": {
+    "description": " function is used to manupulate string operation.",
+    "function_list": [
+      {}
+    ]
+  }
+}
