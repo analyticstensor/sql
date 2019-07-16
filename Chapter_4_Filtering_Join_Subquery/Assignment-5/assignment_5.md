@@ -1,6 +1,6 @@
-@Analytics Tensor LLC
-SQL Queries Assignment
-Purpose: This assignment helps to understand and write sql queries efficiently.
+@Analytics Tensor LLC 
+SQL Queries Assignment 
+Purpose: This assignment helps to understand and write sql queries efficiently. 
 
 1. Select all the employees details from the employees table.
 2. Select first name, last name and gender from employees table. 
