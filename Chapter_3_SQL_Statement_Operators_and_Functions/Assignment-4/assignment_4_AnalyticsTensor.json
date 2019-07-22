@@ -159,49 +159,49 @@
     ]
   },
   "date_time_function": {
-    "description": " function is used to manupulate string operation.",
+    "description": " function is used to manupulate date and date time operation.",
     "function_list": [
       {}
     ]
   },
   "control_flow_function": {
-    "description": " function is used to manupulate string operation.",
+    "description": " function is used for control operation like if, case, case when etc..",
     "function_list": [
       {}
     ]
   },
   "cast_function": {
-    "description": " function is used to manupulate string operation.",
+    "description": " function is used for convert/cast operation.",
     "function_list": [
       {}
     ]
   },
   "encrypt_compress_function": {
-    "description": " function is used to manupulate string operation.",
+    "description": " function is used to encryption and compressing data.",
     "function_list": [
       {}
     ]
   },
   "aggregate_function": {
-    "description": " function is used to manupulate string operation.",
+    "description": " function is used to aggregate and group data.",
     "function_list": [
       {}
     ]
   },
   "window_function": {
-    "description": " function is used to manupulate string operation.",
+    "description": " function is used similar to aggregate function but does not cause row to grouped into single output.",
     "function_list": [
       {}
     ]
   },
   "information_function": {
-    "description": " function is used to manupulate string operation.",
+    "description": " function is used to display help or information on object (database, table, view etc).",
     "function_list": [
       {}
     ]
   },
   "json_function": {
-    "description": " function is used to manupulate string operation.",
+    "description": " function is used to manupulate json data types records.",
     "function_list": [
       {}
     ]
