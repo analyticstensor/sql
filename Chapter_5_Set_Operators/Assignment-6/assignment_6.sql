@@ -40,5 +40,31 @@ Purpose: This assignment helps to understand and write sql queries efficiently.
 35. Find the current employee working department from employees and dept_emp table. 
 36. Find all the employees who changed the department more than 1 times. 
 37. Find the manager of all employees. 
-38. Find the minimum, maximun and average salary for each year sorted by year. 
-39. Select top 10 highest salaries paid employees including salary, dept_no and dept_name. 
+38. Find the minimum, maximum and average salary for each year sorted by year. 
+39. Select top 10 highest salaries paid employees including salary, dept_no and dept_name.
+40. Find total employee having same last name;
+41. Find total employee having same first name only with total count greater than 10.
+42. Find employee working in dept 3,5,9.
+43. Find total employee for each department whose salary range from 50000 to 80000.
+44. Find first 10 employees who joined the company earliest.
+45. Find last 10 employees who joined the company latest.
+46. Find employees who has changed their department atleast 5 times.
+47. Find the employee with lowest salary each year using window function.
+48. Find the employee who changed the department most and has highest salary.
+49. Find the employee who changed the department least and has lowest salary.
+50. Find the number of employee who has at least change their department using subquery.
+51. Find total budget spent on salary for each year.
+52. Find total budget spent on salary for each year including month sorted by salary in descending order.
+53. Find average salary for each employees.
+54. Find average, minumum and maximum salary for each department.
+55. Find top highest paying manager name in each department per year.
+56. Find top highest paying manager name in each department per year.
+57. Create new sequence number (integer) and employee no for all employees based hire_date order by full name and birth date.
+58. Find the employees having same first name and working in same department.
+59. Find the employees having same last name and working in same department and born in same year
+60. Find the employees having same last name and working in same department but not born in January, April and December.
+61. Find the most highest and lowest hiring year order by year and month.
+62. Combine all the records from dept_emp and dept_mananger.
+63. Combine all the records from dept_emp and dept_mananger excluding duplicates. 
+64. Combine all the records from dept_emp and dept_mananger which are common between them. 
+65. Create a view "Deidentified_Employees" with encrypted full name based on your choice but must include last 5 characer of lastname, dept_no, department name, encrypted title, encrypted gender, encrypted salary, hire_date, salaries from_date, salaries to_date, title's from_date, title's to_date for all employees.
